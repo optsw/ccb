@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carbs & Cold Brews</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap" rel="stylesheet">
+		<link rel="icon" href="favicon.png">
+</head>
+<body>
+	<header>
+	<div class="header">
+<div class="navitems">
+	<div class="logo"> 
+		<a href="index.html">
+			<img src="logo.png"> 
+		</a>
+	</div>
+<ul>
+<div class="navbutton">
+	<div class="button-fixedwidth">
+			<a class="button active" href="index.html">
+				<li>
+					<h3> 
+						Home
+					</h3>
+				</li>
+			</a>
+		</div>
+</div>
+
+<div class="navbutton">
+	<div class="button-fixedwidth">
+			<a class="button" href="menu.html">
+				<li>
+					<h3> 
+						Menu
+					</h3>
+				</li>
+			</a>
+		</div>
+</div>
+
+<div class="navbutton">
+	<div class="button-fixedwidth">
+			<a class="button" href="coffeechat.html">
+				<li>
+					<h3> 
+						Coffee Chat
+					</h3>
+				</li>
+			</a>
+		</div>
+</div>
+</ul>
+<div class="nowhiring">
+	<a  href="nowhiring.html"> 
+	<img src="nowhiringmenu.png">
+	</a>
+</div>
+</div>
+</div>
+</header>
+<div class="slideshow-container">
+<div class="mySlides fade">
+	<a href="menu.html"> 
+  <img src="special1.png" style="width:100%">
+</a>
+</div>
+
+<div class="mySlides fade">
+	<a href="menu.html"> 
+  <img src="special2.png" style="width:100%">
+</a>
+</div>
+
+<div class="mySlides fade">
+	<a href="menu.html">
+  <img src="special3.png" style="width:100%">
+</a>
+</div><br>
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+</div>
+<div class="tagline">
+	<img src="taglinebanner.png">
+<div class="caption">
+<h2 style="font-size:3vw; position: relative; bottom: 6px;">Memphis Baked and Brewed since 2021</h2>
+</div>
+</div>
+<div class="about">
+	
+
+</div>
+
+
+
+
+
+</div>
+<footer>
+
+	
+	<div class="hours">
+			<h3>Hours & Contact</h3>
+			<div class="hours-wrap">
+				<div>
+					<p>Carbs and Cold Brews<br><b>(901)-123-4567 </b><p>Monday - Saturday 7am - noon Tue - Sun 8am to 3pm</p> </p>
+				</div>
+				<div>
+					<p>hello@c-cb.com<br>
+					P.O. Box 12345, Memphis, TN 38134<br>
+					Facebook @carbsandcoldbrews<br>
+					Instagram @carbsandcoldbrews<br>
+					TikTok @carbsandcoldbrews</p>
+			</div>
+		</div>
+	</div>
+		<div class="email-signup"> 
+			<h3>Let's Stay in Touch</h3>
+		<div class="email-wrap">
+		<input type="email" placeholder="Enter your email">
+		<button class="signupb">Sign Up</button>
+		</div>
+		<p class="note">We promise we won't spam you. Opt-out anytime.</p>
+	</div>
+</footer>
+</body>
+</html>
